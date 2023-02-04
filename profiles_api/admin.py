@@ -1,8 +1,6 @@
 from django.contrib import admin
 
-from .models import UserProfile
+from .models import UserProfile, ProfileFeedItem
 
-class UserProfileAdmin(admin.ModelAdmin):
-    pass
-
-admin.site.register(UserProfile,UserProfileAdmin)
+admin.site.register(UserProfile)
+admin.site.register(ProfileFeedItem)
